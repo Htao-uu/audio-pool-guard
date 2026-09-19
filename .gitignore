@@ -1,0 +1,28 @@
+# Build output
+build/
+out/
+run/
+run-data/
+logs/
+*.log
+
+# Offline-build helper output (regenerate with tools/offline-build-setup.ps1; ~93 MB)
+local-maven/
+.gradle-home/
+.gradle/
+
+# IDEs
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+.settings/
+.classpath
+.project
+bin/
+
+# OS
+Thumbs.db
+desktop.ini
+.DS_Store

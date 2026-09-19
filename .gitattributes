@@ -1,0 +1,11 @@
+# Line endings: cmd.exe mis-parses a .bat that uses LF only, so batch files must stay CRLF.
+* text=auto
+
+*.bat text eol=crlf
+*.cmd text eol=crlf
+gradlew text eol=lf
+*.sh text eol=lf
+
+*.jar binary
+*.png binary
+*.gif binary

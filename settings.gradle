@@ -1,0 +1,15 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        maven { url = 'https://maven.minecraftforge.net/' }
+        // Mirrors, used when the plugin portal is slow or unreachable.
+        maven { url = 'https://maven.aliyun.com/repository/public' }
+        maven { url = 'https://maven.aliyun.com/repository/gradle-plugin' }
+    }
+}
+
+// No foojay-resolver-convention plugin here: the build runs on JDK 17, which satisfies the Java 17
+// toolchain directly, so no JDK download is needed. Add it back if your build machine lacks JDK 17:
+//   plugins { id 'org.gradle.toolchains.foojay-resolver-convention' version '0.8.0' }
+
+rootProject.name = "audio-pool-guard"
