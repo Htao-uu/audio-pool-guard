@@ -20,7 +20,11 @@ import org.slf4j.Logger;
 @Mod(AudioPoolGuard.MODID)
 public class AudioPoolGuard {
 
-    public static final String MODID = "audio-pool-guard";
+    /**
+     * Forge mod id. Must match {@code [a-z][a-z0-9_]{1,63}} - dashes are rejected by Forge 1.20.1
+     * ("File &lt;jar&gt; is not a valid mod file"), so this differs from the project/artifact name.
+     */
+    public static final String MODID = "audio_pool_guard";
 
     public static final Logger LOGGER = LogUtils.getLogger();
 
